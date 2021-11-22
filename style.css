@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align:center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* header */
+
+header{
+    position:absolute ;
+    left: 0;
+    right: 0;
+    margin: 1em;
+}
+
+.logo {
+    color: tomato;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
+nav li{
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a{
+    
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5em;
+    color: white;
+    font-size: .8rem;
+}
+
+nav a:hover{
+    color: #ddd;
+}
+
+@media (min-width:60rem) {
+    .logo{
+        float: left;
+    }
+
+    nav {
+        float: right;
+    }
+}
+
+/* Container */
+
+.container{
+    width: 95%;
+    max-width: 75em;
+    margin: 0 auto;
+}
+
+section {
+    display: block;
+    clear: both;
+}
+
+
+/* Home hero */
+
+.home-hero{
+      background-image: url(Hogwarts.jpg);
+      padding: 10em 0;
+      background-position: center;
+      background-size: cover;
+      color:white;
+}
+
+@media (min-width: 60rem) {
+      .home-hero{
+          height: 100vh;
+          padding-top: 35vh ;
+      }
+}
+
+.unstyled-list{
+    list-style-type: none;
+    /* line-height: 2em; */
+    margin: 0;
+    padding:0
+}
+
+/* Column system */
+
+
+
+
+
+/* typhography */
+
+p{
+    margin-top: 0; 
+    line-height: 1.5;
+}
+
+p:last-of-type {
+    margin-bottom:0;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.home-title{
+    font-size: 2.5rem;
+    margin-top: 1em;
+}
+
+
+h1 span{
+    font-size: .9em;
+    font-weight: 900;
+    display: block;
+}
+
+@media (min-width: 60rem) {
+
+    p{
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+      .home-title{
+          font-size: 3.7rem;
+      }
+}
+
+/* Button */
+
+.button {
+    font-size:1.15rem;
+    border-color: tomato;
+    text-transform:uppercase;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    padding: .5em 1.75em;
+    text-decoration: none;
+    color: tomato;
+    /* margin-bottom: .5em; */
+}
+
+.button-accent:hover {
+    color: white;
+    background: tomato;
+}
+
+.button-bottom{
+    border-color:black;
+    color:black;
+    margin: .5em;
+}
+
+.button-bottom:hover {
+    color: tomato;
+    background: rgb(0, 0, 0);
+}
+
+@media (min-width:60rem) {
+     .button{
+         font-size:1.5rem
+     }
+}
+
+
+/*  Home about */
+
+.home-about-text{
+    background-color: #232323;
+    padding: 4em;
+    width: 100vw;
+    margin-left: -2.7%;
+    outline: 2px solid tomato;
+    outline-offset: -2.5em;
+    color: white;
+    position: relative;
+}
+
+.home-about-text h1{
+    color: tomato;
+    position: absolute;
+    top: .55em;
+    background: #232323;
+    padding: 0 .325rem;
+    left: 50%;
+    transform:translateX(-50%)
+}
+
+
+@media (max-width: 28rem) {
+
+    .home-about-text h1 {
+        top: .85em;
+        padding: 0 .145rem;
+        font-size: 1.7rem;
+    }
+} 
+
+@media (min-width: 60rem) {
+    h1{
+        font-size: 2.5rem;
+     }
+     .home-about{
+         background-image: url(Hogwarts.jpg);
+         background-repeat: no-repeat;
+         padding-bottom: 10em;
+         } 
+
+     .home-about-text{
+         width: 50%;
+         padding: 7em;
+         outline-offset: -3.75em;
+         margin-left: -2.25%;
+         top: -5em;
+         text-align: left;
+         box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
+     }
+
+    .home-about-text h1{
+        top: .75em;
+        left: 6rem;
+        transform: translateX(0);
+    }
+    /* .home-about-text h1{
+        top: .3em;
+        padding: 0 .6em;
+    } */
+}
+
+/* Portfolio */
+
+.portfolio{
+    margin: 3em 0;
+}
+
+.port-item{
+    margin:0;
+    position:relative;
+}
+
+.port-item img{
+    display:block;
+}
+
+
+.port-desk{
+    position:absolute;
+    z-index:100;
+    bottom: 0em;
+    left: 0em;
+    right:0em;
+    color:white;
+    background: rgba(0,0,0,.6);
+    padding: 0 .5em 1em .5em ;
+}
+
+.port-desk p{
+    margin-bottom: .3em;
+}
+
+@media (min-width:34.5rem) {
+    .port-item{
+        width: 50%;
+        float:left;
+        overflow: hidden;
+    } 
+}
+
+
+@media (min-width:60rem) {
+    .port-item{
+        width: 33.333334%;
+    }
+    .port-desk{
+        transform: translateY(150%);
+    }
+
+    .port-item:hover .port-desk {
+        transform: translateY(0%);
+    }
+   
+}
+
+/* Home cta */
+
+.home-cta {
+    /* display: inline-block; */
+    /* width: 100vw; */
+    background: tomato;
+    text-align: center;
+    padding: 3em;
+    
+}
+
+ .home-cta h1{
+    margin: 0;
+    font-size: 1.6rem;
+} 
+
+
+
+@media (min-width:34.4rem) {
+    .home-cta h1{
+        font-size: 2rem;  
+    }
+  
+}
+
+/* Footer */
+ 
+footer {
+    background: #232323;
+    color: #fff;
+    display:inline-block;
+    text-align: left;
+    padding: 5em 0;
+}
+
+[class^=col-] {
+    width: 100%;
+    margin-top: 1em;
+}
+
+[class^=col-]:first-child {
+    margin-top: 0;
+}
+
+.col-1  {
+    width: 33%; 
+    float: left;
+}
+
+
+@media (min-width:41rem) {
+
+    [class^="col-"] {
+        float: left;
+        padding: 0 .5em;
+        margin-top: 0;
+    }
+    
+    [class^="col-"]:first-child {
+        padding-left: 0;
+    }
+    
+    [class^="col-"]:last-child {
+        padding-right: 0;
+    }
+    
+    .col-1{
+    width: 16.6666%;
+    }
+    
+    .col-3{
+      width: 50%;
+    }
+
+
+}
+
+
+
+ /* footer {
+    display: flex;
+    height: 45vh;
+    background: #232323;
+    color: white;
+    font-size: .8rem;
+    
+}  
+
+.col-3{
+    padding: 6em .5em 12em 9em ;
+    width: 50%;
+    justify-content: flex-end;
+    text-align: left;
+}  
+
+.col1 {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    padding: 4.6em 6em 12em 0em ;
+    text-align: left;
+    gap: 1em;
+}  */
+
